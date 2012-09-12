@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>javascript Test 2</title>
+<script type="text/javascript" src="fInitArray.js"></script>
+</head>
+<body>
+ 
+<script type="text/javascript">
+document.write("Rezultat: ");
+document.write("</br>");
+
+var daj;
+var rows = 10;
+var columns = 24;
+daj = fInitArray (rows,columns);
+
+document.write('<font size="1" face="courier">'); // set the "courier" font
+
+// reading values from the matrix
+
+for(var i = 0; i < rows; i++) {
+		for(var j = 0; j < columns; j++) {
+ 			{document.write(daj[i][j])}
+ 			}
+ {document.write('</br>')} // at the end of the row the "break" for the newline is written
+}
+
+</script>
+ 
+</body>
+</html>
